@@ -7,7 +7,8 @@
     --darkblue: #020074;
     --white: #fff;
     --black: rgb(0, 0, 0);
-    --lightlue: #aad2ff ; 
+    --lightlue: #aad2ff ;
+    --background:  #b6d0e6;
 }
 /* Hero Section Starts*/
 #hero {
@@ -16,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #b6d0e6;
+    background: var(--background);
     height: 1000px;
 }
 #hero ul {
@@ -209,7 +210,7 @@
     color: var(--darkblue);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1175px) {
 
     #hero .container{
         width: 2310px;
@@ -343,7 +344,7 @@
     text-decoration: none;  
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1175px) {
     
     #logos .all-items { 
     flex-wrap: wrap;
@@ -354,6 +355,7 @@
 	#logos .all-items {
 		flex-direction: column;
 		text-align: center;
+        justify-content: center;
 	}
 	#logos .item .icon {
 		margin: 0 auto;
@@ -364,3 +366,223 @@
 	}
 }
 /* Logos Section End */
+
+/* Classes Section Start */
+
+#courses {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:var(--background);
+  overflow: hidden;
+  }
+
+#courses .card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+#courses .card-image {
+  grid-area: image;
+  background: url("images/Test1.jfif");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+#courses .card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+#courses .card-text img {
+    margin-bottom : 15px;
+}
+
+#courses .card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+#courses .card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+#courses .card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: var(--darkblue);
+}
+#courses .card-stats .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+#courses .card-stats .border {
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+}
+#courses .card-stats .value{
+  font-size:22px;
+  font-weight: 500;
+}
+#courses .card-stats .value sup{
+  font-size:12px;
+}
+#courses .card-stats .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#courses .card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+
+#courses .card-image.card2 {
+  background: url("../Coursera-clone/images/test4.jpg");
+  background-size: cover;
+}
+
+
+#courses .card-image.card3 {
+  background: url("../Coursera-clone/images/test3.jfif");
+  background-size: cover;
+}
+@media only screen and (max-width: 1175px) {
+    #courses { 
+    flex-wrap: wrap;
+     }
+}
+@media only screen and (max-width: 480px) {
+    #courses {
+        flex-direction: column;
+    }
+}
+  /* Classes Section End */
+
+  /*Footer Section Start */ 
+
+#footer {
+  background-color: var(--darkblue);
+  color: var(--white);
+  padding: 2rem 2rem;
+}
+#footer footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0.2rem;
+}
+#footer footer .col-1 {
+  flex: 2;
+}
+#footer footer .col-2,
+#footer footer .col-3,
+#footer footer .col-4 {
+  flex: 3;
+}
+#footer footer .col-4 {
+  flex: 3;
+}
+
+#footer footer .col-1 .logo img {
+  max-width: 1000px;
+  margin-bottom: 2rem;
+}
+#footer footer .col-1 p {
+  color: white;
+
+}
+
+
+#footer footer .column-heading {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
+#footer footer ul {
+  list-style: none;
+}
+#footer footer ul li {
+  border-radius: 2px;
+}
+#footer footer ul li:hover {
+  background-color: var(--lightlue);
+
+}
+#footer footer ul li:hover a {
+  color: var(--darkblue);
+  text-decoration: none;
+}
+#footer footer ul li a {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  text-decoration: none;
+}
+#footer footer .col-4 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer footer .col-4 ul li a {
+  min-width: 30px;
+}
+@media only screen and (max-width: 768px) {
+	#footer footer {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	#footer footer .col-1,
+	#footer footer .col-2,
+	#footer footer .col-3,
+	#footer footer .col-4 {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	#footer footer .col-4 ul {
+		width: fit-content;
+		margin: 0 auto;
+	}
+}
+
+/* copyright Section */
+#copyright {
+  padding: 1rem 0;
+  background-color: var(--lightlue);
+}
+#copyright p {
+  color: var(--darkblue);
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 768px) {
+	#copyright p {
+	  text-align: center;
+	}
+}
+
