@@ -8,8 +8,29 @@
      <link rel="stylesheet" type="text/css" href="../Coursera-clone/styles.css" media="screen">
  </head>
  <body>
+<!--Navbar Start-->
+<section id="nav-bar" class="container">
+    <header class="nav-bar">
+    <img src="../Coursera-clone/images/Nav1.svg">
+    <div class="brand">
+    
+    </div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="#hero">Main Page</a></li>
+          <li><a href="#logos">Logos</a></li>
+          <li><a href="#courses">Courses</a></li>
+        </ul>
+      </div>
+    </header>
+  </section> 
+<!--Navbar End-->
+
 <!--Hero Section Start-->
-  <section id="hero">
+<section id="hero">
     <div class="container">
         <div class="content">
             <ul>
@@ -53,7 +74,7 @@
             </ul>
         </div>
     </div>
-  </section> 
+</section> 
 <!--Hero Section Ends-->  
 
 <!--Classes Section Start-->
@@ -206,4 +227,13 @@
     </div>
   </section>
  </body>
+ <script>
+ const hamburger_icon = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
+ const nav_list = document.querySelector('#nav-bar .nav-bar .nav-list');
+
+ hamburger_icon.addEventListener('click', () => {
+	nav_list.classList.toggle('open');
+	hamburger_icon.classList.toggle('active');
+});     
+ </script>
  </html>
