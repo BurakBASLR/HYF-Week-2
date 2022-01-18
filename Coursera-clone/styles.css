@@ -10,7 +10,7 @@
     --lightlue: #aad2ff ; 
 }
 /* Hero Section Starts*/
-.hero {
+#hero {
     color: var(--blue);
     font-family: sans-serif;
     display: flex;
@@ -19,14 +19,14 @@
     background: #b6d0e6;
     height: 1000px;
 }
-ul {
+#hero ul {
     list-style: none;
 }
-a {
+#hero a {
     color: var(--darkblue);
     text-decoration: none;
 }
-.container{
+#hero .container{
     position: relative;
     width: 3300px;
     justify-content: center;
@@ -36,41 +36,41 @@ a {
     padding-top: 7%;
     text-align: center;
 }
-.book {
+#hero .book {
     position: relative;
     width: 475px;
     height: 675px;
     perspective: 2500px;
     transform-style: preserve-3d;
 }
-.book-icon img{
+#hero .book-icon img{
     width: 275px;
     height: 100px;
     margin-top: 12.5px;
 }
-.writer img{
+#hero .writer img{
     float: right;
     width: 300px;
     height: 300px;
     margin-left: 25px;
 }
-.title{
+#hero .title{
    color: var(--white);
    font-size: 32.5px;
    font-weight: bolder;
    padding-top: 50px;
 }
-.heading{
+#hero .heading{
     color: var(--white);
     margin-top: 25px;
 }
-.sub-title{
+#hero .sub-title{
     color: var(--lightlue);
     margin-top: 25px;
     font-size: 35px;
 
 }
-.writer p{
+#hero .writer p{
     text-align: left;
     float: left;
     color: var(--white);
@@ -78,21 +78,21 @@ a {
     margin-left:37.5px;
     color: var(--white);
 }
-.writer i {
+#hero .writer i {
     color: var(--white);
 }
 
 
-.front li {
+#hero .front li {
     background: white;
     border-radius: 25px;
 }
-.back li{
+#hero .back li{
     background: linear-gradient(to bottom,  #031270, #0e23a2, #1e2b78, #3c4788, #003158);
     border-radius: 25px;
     width: 97.5% !important;
 }
-.page > li{
+#hero .page > li{
     background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
     background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
     box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1),
@@ -102,85 +102,85 @@ a {
     height: 100%;
     transform-origin: left center;
 }
-.front{
+#hero .front{
     transform: rotateY(-34deg) translateZ(8px);
     z-index: 1;
 }
-.back{
+#hero .back{
     transform: rotateY(-15deg) translateZ(-8px);
     z-index: -1;
 }
-.page li:nth-child(1){
+#hero .page li:nth-child(1){
     transform: rotateY(-28deg);
 }
-.page li:nth-child(2){
+#hero .page li:nth-child(2){
     transform: rotateY(-30deg);
 }
-.page li:nth-child(3){
+#hero .page li:nth-child(3){
     transform: rotateY(-34deg);
 }
-.page li:nth-child(4){
+#hero .page li:nth-child(4){
     transform: rotateY(-36deg);
 }
-.page li:nth-child(5){
+#hero .page li:nth-child(5){
     transform: rotateY(-36deg);
 }
-.front,
-.back,
-.front li,
-.back li{
+#hero .front,
+#hero .back,
+#hero .front li,
+#hero .back li{
     position: absolute;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
 }
-.front ,
-.back{
+#hero .front ,
+#hero .back{
     transform-origin: 0% 100%;
 }
-.front{
+#hero .front{
     transition: all 0.8s ease , z-index 0.6s;
 }
-.front li:last-child{
+#hero .front li:last-child{
     transform: rotateY(180deg) translateZ(2px);
 }
-.page,
-.page > li {
+#hero .page,
+#hero .page > li {
     position: absolute;
 }
-.page {
+#hero .page {
     width: 100%;
     height: 98%;
     top: 1%;
     left: 3%;
 }
-.page li{
+#hero .page li{
     transition-duration: 0.6s;
 }
-.book:hover .front{
+#hero .book:hover .front{
     transform: rotateY(-145deg) translateZ(0);
 }
-.book:hover > .page li:nth-child(1){
+#hero .book:hover > .page li:nth-child(1){
     transform: rotateY(-30deg);
     transition: 1.5s;
 }
-.book:hover > .page li:nth-child(2){
+#hero .book:hover > .page li:nth-child(2){
     transform: rotateY(-35deg);
     transition: 1.8s;
 }
-.book:hover > .page li:nth-child(3){
+#hero .book:hover > .page li:nth-child(3){
     transform: rotateY(-118deg);
     transition: 1.6s;
 }
-.book:hover > .page li:nth-child(4){
+#hero .book:hover > .page li:nth-child(4){
     transform: rotateY(-130deg);
     transition: 1.4s;
 }
-.book:hover > .page li:nth-child(5){
+#hero .book:hover > .page li:nth-child(5){
     transform: rotateY(-140deg);
     transition: 1.2s;
 }
-.frontcover {
+#hero .frontcover {
     position: absolute;
     background: linear-gradient(to bottom,  #031270, #0e23a2, #1e2b78, #3c4788, #003158 );
     height: 100%;
@@ -189,7 +189,7 @@ a {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-.btn{
+#hero .btn{
     display: inline-block;
     text-decoration: none;
     margin-top: 300px;
@@ -203,7 +203,7 @@ a {
     transition: color 0.3s , border-color 0.3s;
 }
 
-.btn:hover{
+#hero .btn:hover{
     box-shadow: -3px -3px 5px 0px var(--white) inset,
     3px 3px 5px 0px var(--black) inset;
     color: var(--darkblue);
@@ -211,49 +211,49 @@ a {
 
 @media screen and (max-width: 720px) {
 
-    .container{
+    #hero .container{
         width: 2310px;
     }
-    .book {
+    #hero .book {
         width: 332.5px;
         height: 472.5px;
         perspective: 1750px;
     }
-    .book-icon img{
+    #hero .book-icon img{
         width: 192.5px;
         height: 70px;
         margin-top: 8.75px;
     }
-    .writer img{
+    #hero .writer img{
         width: 150px;
         height: 150px;
         margin-left: 17.5px;
     }
-    .title{
+    #hero .title{
        font-size: 22.75px;
        padding-top: 35px;
     }
-    .heading{
+    #hero .heading{
        margin-top: 17.5px;
     }
-    .sub-title{
+    #hero .sub-title{
        margin-top: 17.5px;
        font-size: 24.5px;
     }
-    .writer p{
+    #hero .writer p{
         margin-top: 100px;
         margin-left:16.25px;
         font-size:larger;
     }
-    .front li {
+    #hero .front li {
         border-radius: 17.5px;
     }
-    .frontcover {
+    #hero .frontcover {
         border-radius: 8.75px;
         border-top-right-radius: 17.5px;
         border-bottom-right-radius: 17.5px;
     }
-    .btn{
+    #hero .btn{
         margin-top: 210px;
         padding: 14px 21px;
         border-radius: 7px;
@@ -261,48 +261,48 @@ a {
 }
 @media screen and (max-width: 480px) {
 
-    .container{
+    #hero .container{
         width: 1320px;
     }
-    .book {
+    #hero .book {
         width: 190px;
         height: 270px;
         perspective: 1000px;
     }
-    .book-icon img{
+    #hero .book-icon img{
         width: 110px;
         height: 40px;
         margin-top: 5px;
     }
-    .writer img{
+    #hero .writer img{
         width: 50px;
         height: 45px;
         margin-left: 10px;
     }
-    .title{
+    #hero .title{
        font-size: 13px;
        padding-top: 20px;
     }
-    .heading{
+    #hero .heading{
        margin-top: 10px;
     }
-    .sub-title{
+    #hero .sub-title{
        margin-top: 10px;
        font-size: 14px;
     }
-    .writer p{
+    #hero .writer p{
         margin-top: 2px;
         margin-left:15px;
     }
-    .front li {
+    #hero .front li {
         border-radius: 10px;
     }
-    .frontcover {
+    #hero .frontcover {
         border-radius: 5px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    .btn{
+    #hero .btn{
         margin-top: 120px;
         padding: 8px 12px;
         border-radius: 4px;
@@ -310,3 +310,57 @@ a {
 }
 
 /* Hero Section End */
+
+/* Logos Section Start*/
+#logos {
+    padding: 5rem 0;
+}
+#logos .all-items {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+#logos .item{
+    padding: 3.5rem;
+    border-radius: 50px;
+}
+#logos .item:hover {
+	background-color: var(--blue);
+	color: var(--white);
+	transition: 0.5s ease;
+}
+#logos .item-heading {
+	font-weight: 400;
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+}
+#logos .section-heading {
+	text-align: center;
+	position: relative;
+    padding-bottom: 1rem;   
+}
+#logos .section-heading a{
+    text-decoration: none;  
+}
+
+@media only screen and (max-width: 768px) {
+    
+    #logos .all-items { 
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+@media only screen and (max-width: 480px) {
+	#logos .all-items {
+		flex-direction: column;
+		text-align: center;
+	}
+	#logos .item .icon {
+		margin: 0 auto;
+		margin-bottom: 1rem;
+	}
+	#logos .item {
+		margin: 2rem 0;
+	}
+}
+/* Logos Section End */
